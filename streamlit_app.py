@@ -1,11 +1,14 @@
 import streamlit as st
 
-# Hide Streamlit's default bar (the settings dot and all)
+# Enhanced CSS to hide the toolbar and other components
 hide_streamlit_style = """
     <style>
     /* Hide the top menu and footer */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
+    
+    /* Hide the toolbar with test id 'stToolbar' */
+    div[data-testid="stToolbar"] {visibility: hidden;}
     </style>
     """
 
